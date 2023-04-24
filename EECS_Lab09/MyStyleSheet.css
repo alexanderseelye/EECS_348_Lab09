@@ -1,0 +1,74 @@
+:root {
+	--text-color: black;
+	--border-color: black;
+	--border-width: 1px;
+}
+img {
+	width: 231;
+	height: 308;
+}
+.footer {
+	position: relative;
+	text-align: center;
+	bottom: 10px;
+	width: 100%;
+}
+a:link {
+	text-decoration: none;
+	color: blue;
+}
+a:visited {
+	text-decoration: none;
+	color: purple;
+}	
+a:hover {
+	text-decoration: underline;
+	color: red;
+}
+a:active {
+	text-decoration: underline;
+	color: orange;
+}
+.title {
+	background-color: #5585b5;
+}
+.header {
+	background-color: #53a8b6;
+}
+.body {
+	background-color: #bbe4e9;
+}
+div {
+	padding-top: 10px;
+	padding-right: 10px;
+	padding-bottom: 10px;
+	padding-left: 10px;
+}
+#content {
+	color: var(--text-color);
+	border: var(--border-width) solid var(--border-color);
+	padding: 10px;
+}
+input[type="text"], input[type="range"], label {
+	display: inline-block;
+	margin: 5px;
+}
+label {
+	font-weight: bold;
+}
+.multtable {
+	width: 100%;
+	border-collapse: collapse;
+	
+}
+.multtableh {
+	height: 15px;
+	padding: 5px;
+}
+.multtabled {
+	height: 10px;
+	padding: 5px;
+}
+.multtable, .multtableh, .multtabled {
+	border: 2px solid black;
+}

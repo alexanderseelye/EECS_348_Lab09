@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Practice 2</title>
+	<link href="MyStyleSheet.css" rel="stylesheet">
+</head>
+<body>
+	<div class="title">
+		<h1 align="center">This is my color changing table!</h1>
+	</div>
+	<div class="header">
+		<h2 align="center">
+		Here is my paragraph of dummy text!
+		</h2>
+	</div>
+	<div>
+		<p id="content" align="center">
+		---This is the text that should be changing---
+		</p>
+	</div>
+	<div class="body">
+		<label for="text-color">TEXT COLOR:</label>
+		<input type="text" id="text-color" placeholder="red/green/blue"><br>
+		<label for="border-color">BORDER COLOR:</label>
+		<input type="text" id="border-color" placeholder="red/green/blue"><br>
+		<label for="border-width">BORDER WIDTH:</label>	
+		<input type="text" id="border-width" placeholder="1px"><br>
+		<button onclick="changeProperties()">Change Properties</button>
+		<script>
+			function changeProperties() {
+				const textcolor = document.getElementById("text-color").value;
+				const bordercolor = document.getElementById("border-color").value;
+				const borderwidth = document.getElementById("border-width").value;
+				
+				document.documentElement.style.setProperty("--text-color", textcolor);
+				document.documentElement.style.setProperty("--border-color", bordercolor);
+				document.documentElement.style.setProperty("--border-width", borderwidth);
+			}
+		</script>
+	</div>
+	<div>
+	<a href="index.html" align="center"><h2>GO BACK</h2></a>
+	</div>
+</body>
+</html>
